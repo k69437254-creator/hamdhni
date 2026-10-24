@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Initialize Capacitor Project
+      - name: Setup Project and Capacitor
         run: |
           npm init -y
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "hamdhni" "com.hamdhni.app" --web-dir "."
+          npx cap init "Hamdhni" "com.hamdhni.app" --web-dir "."
           npx cap add android
           npx cap sync android
 
