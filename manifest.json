@@ -1,0 +1,15 @@
+{
+  "name": "حمضني",
+  "short_name": "حمضني",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FBF7E6",
+  "theme_color": "#FFD43B",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/k69437254-creator/hamdhni/main/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
