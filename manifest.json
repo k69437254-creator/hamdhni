@@ -1,7 +1,9 @@
 {
   "name": "حمضني",
   "short_name": "حمضني",
+  "description": "تطبيق حمضني للإبلاغ عن المحمضين",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#FBF7E6",
   "theme_color": "#FFD43B",
@@ -9,7 +11,8 @@
     {
       "src": "https://raw.githubusercontent.com/k69437254-creator/hamdhni/main/icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
