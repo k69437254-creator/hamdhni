@@ -19,31 +19,18 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Native Dependencies & CLI
+      - name: Build with Gradle
         run: |
-          npm install -g @capacitor/cli @capacitor/core
-
-      - name: Initialize Web Assets & Android Platform
-        run: |
-          if [ ! -f "package.json" ]; then
-            npm init -y
+          if [ -d "android" ]; then
+            cd android
+            chmod +x gradlew
+            ./gradlew assembleDebug
+          else
+            echo "Android folder is missing, please ensure capacitor android folder is committed."
+            exit 1
           fi
-          npm install @capacitor/android @capacitor/core
-          npx cap init "Hamdhni" "com.hamdhni.app" --web-dir "." --yes
-          npx cap add android
 
-      - name: Build APK via Gradle
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleDebug
-
-      - name: Upload APK Artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Hamdhni-APK
