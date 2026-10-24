@@ -24,15 +24,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Setup Project and Capacitor
+      - name: Install Native Dependencies & CLI
         run: |
-          npm init -y
-          npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "Hamdhni" "com.hamdhni.app" --web-dir "."
-          npx cap add android
-          npx cap sync android
+          npm install -g @capacitor/cli @capacitor/core
 
-      - name: Build Android APK
+      - name: Initialize Web Assets & Android Platform
+        run: |
+          if [ ! -f "package.json" ]; then
+            npm init -y
+          fi
+          npm install @capacitor/android @capacitor/core
+          npx cap init "Hamdhni" "com.hamdhni.app" --web-dir "." --yes
+          npx cap add android
+
+      - name: Build APK via Gradle
         run: |
           cd android
           chmod +x gradlew
