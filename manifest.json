@@ -9,15 +9,15 @@
   "theme_color": "#FFD43B",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/k69437254-creator/hamdhni/main/1792826229778.jpg",
+      "src": "https://images.weserv.nl/?url=raw.githubusercontent.com/k69437254-creator/hamdhni/main/1792826229778.jpg&output=png&w=512&h=512",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://raw.githubusercontent.com/k69437254-creator/hamdhni/main/1792826229778.jpg",
+      "src": "https://images.weserv.nl/?url=raw.githubusercontent.com/k69437254-creator/hamdhni/main/1792826229778.jpg&output=png&w=192&h=192",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ]
