@@ -9,13 +9,13 @@
   "theme_color": "#FFD43B",
   "icons": [
     {
-      "src": "https://k69437254-creator.github.io/hamdhni/icon.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/3137/3137088.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://k69437254-creator.github.io/hamdhni/icon.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/3137/3137088.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
